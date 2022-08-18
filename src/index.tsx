@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import SideBar from "./components/Sidebar/sidebar";
+import Container from "./container/Container";
 
 const Index = () => {
   return (
     <>
-      <h1>Hello React</h1>
-      <SideBar />
+      <Container />
     </>
   );
 };
