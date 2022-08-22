@@ -5,7 +5,16 @@ import styled from "styled-components";
 `;
 
 
+const ContentDiv = styled.div`
+margin: 1rem;
+padding: 1rem;
+width: 100%;
+background-color: #999;
+`
+
+
 
 export {
-  Sidebarcontainer
+  Sidebarcontainer,
+   ContentDiv
 }
