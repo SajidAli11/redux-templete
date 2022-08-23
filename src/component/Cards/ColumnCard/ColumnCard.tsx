@@ -1,14 +1,18 @@
-import { Area } from "@ant-design/plots";
 import { Card, Row, Tooltip } from "antd";
 import { InfoCircleOutlined } from "@ant-design/icons";
 import { data } from "../../../utils/dummydata";
-const GraphCard = () => {
+import { Column } from "@ant-design/plots";
+
+const ColumnCard = () => {
   const config = {
     data,
     xField: "timePeriod",
     yField: "value",
     xAxis: {
-      range: [0, 1],
+      label: {
+        autoHide: true,
+        autoRotate: false,
+      },
     },
   };
 
@@ -20,13 +24,13 @@ const GraphCard = () => {
           justify="space-between"
           align="middle"
         >
-          <span> Graph Card </span>
-          <Tooltip title="graph card">
+          <span> Column Card </span>
+          <Tooltip title="column card">
             <InfoCircleOutlined />
           </Tooltip>
         </Row>
         <Row>
-          <Area height={80} width={220} {...config} />
+          <Column height={80} width={220} {...config} />
         </Row>
       </Row>
       <Row justify="space-around" style={{ marginTop: 20 }}>
@@ -37,4 +41,4 @@ const GraphCard = () => {
   );
 };
 
-export default GraphCard;
+export default ColumnCard;
