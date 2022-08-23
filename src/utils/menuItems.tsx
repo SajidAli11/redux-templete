@@ -23,7 +23,7 @@ export const menuItems = [
     key: "cross-system-analysis",
     icon: <FundOutlined />,
     label: (
-      <Link to="/CrossSysAnalysis">
+      <Link to="/crosssysanalysis">
         <span>Cross System Analysis</span>
       </Link>
     ),
