@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Tooltip } from "antd";
 import { Header, CardDiv } from "./styles";
 import { InfoCircleOutlined } from "@ant-design/icons";
-const CardBody = ({ name, data }) => {
+const DefaultCard = ({ name, data }) => {
   return (
     <CardDiv
       className="card"
@@ -32,4 +32,4 @@ const CardBody = ({ name, data }) => {
   );
 };
 
-export default CardBody;
+export default DefaultCard;
