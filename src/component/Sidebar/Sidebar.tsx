@@ -6,6 +6,8 @@ import React from "react";
 import { menuItems } from "../../utils/menuItems";
 import { Outlet } from "react-router-dom";
 
+import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
+
 const { Sider } = Layout;
 
 const Sidebar = () => {
@@ -25,6 +27,7 @@ const Sidebar = () => {
             breakpoint="xl"
             collapsedWidth="60"
             theme="light"
+            trigger={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
           >
             <Menu items={menuItems}></Menu>
           </Sider>

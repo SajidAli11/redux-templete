@@ -37,4 +37,5 @@ export default Container;
 
 const ContainerDiv = styled.div`
     display:flex;
+    background-color: #e7e4e4;
 `
