@@ -1,10 +1,18 @@
+
 import React from 'react'
 import ReactDOM from "react-dom";
+
+import Navbar from './component/NavBar/Navbar';
+
+import { Layout } from 'antd';
+
 
 
 const Index = () => {
   return ( <>
-   <h1>Hello React</h1>
+  <Layout style={{backgroundColor:"white"}}>
+    <Navbar />
+   </Layout>
   </> );
 }
  
