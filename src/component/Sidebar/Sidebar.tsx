@@ -1,10 +1,9 @@
 import { Layout, Menu } from "antd";
 import { useState } from "react";
-import { ContentDiv, Sidebarcontainer } from "./styles";
+
 import "antd/dist/antd.min.css";
 import React from "react";
 import { menuItems } from "../../utils/menuItems";
-import { Outlet } from "react-router-dom";
 
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 
@@ -14,28 +13,23 @@ const Sidebar = () => {
   const [collapsed, setCollapsed] = useState(false);
   return (
     <>
-      <Sidebarcontainer>
-        <Layout
-          style={{
-            minHeight: "100vh",
-          }}
+      <Layout
+        style={{
+          minHeight: "100vh",
+        }}
+      >
+        <Sider
+          collapsible
+          collapsed={collapsed}
+          onCollapse={(value) => setCollapsed(value)}
+          breakpoint="xl"
+          collapsedWidth="60"
+          theme="light"
+          trigger={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
         >
-          <Sider
-            collapsible
-            collapsed={collapsed}
-            onCollapse={(value) => setCollapsed(value)}
-            breakpoint="xl"
-            collapsedWidth="60"
-            theme="light"
-            trigger={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-          >
-            <Menu items={menuItems}></Menu>
-          </Sider>
-        </Layout>
-      </Sidebarcontainer>
-      <ContentDiv>
-        <Outlet />
-      </ContentDiv>
+          <Menu items={menuItems}></Menu>
+        </Sider>
+      </Layout>
     </>
   );
 };

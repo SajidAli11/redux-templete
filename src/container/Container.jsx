@@ -8,12 +8,15 @@ import DrsTrends from "../views/DRS/Drs"
 import DpsTrends from "../views/DPS/Dps"
 import MonthYearTrend from "../views/Core/MonthYearTrends/MonthYearTrends"
 import RangeTrends from "../views/Core/RangeTrends/RangeTrends"
+import { Outlet } from "react-router"
+
 
 const Container = () => {
     return(
         <ContainerDiv>
+            <Sidebar/>
+            <ContentDiv>
             <Routes>
-                <Route path="/" element={<Sidebar/>}>
                 <Route index element={< DashBoard />}>  </Route>
                 <Route path='dashboard' element={< DashBoard />}>  </Route> 
                 <Route path='crosssysanalysis' element={< CrossSystemAnalysis />}></Route>
@@ -22,12 +25,8 @@ const Container = () => {
                 <Route path='lsds' element={< LsdsTrends />}></Route>  
                 <Route path='drs' element={< DrsTrends />}></Route>  
                 <Route path='dps' element={< DpsTrends />}></Route>  
-                </Route>
-                 
             </Routes>
-            
-            
-            
+            </ContentDiv>
             </ContainerDiv>
     )
 }
@@ -38,4 +37,11 @@ export default Container;
 const ContainerDiv = styled.div`
     display:flex;
     background-color: #e7e4e4;
+`
+
+const ContentDiv = styled.div`
+margin: 1rem;
+padding: 1rem;
+width: 100%;
+background-color: #fff;
 `
