@@ -8,7 +8,7 @@ import DrsTrends from "../views/DRS/Drs"
 import DpsTrends from "../views/DPS/Dps"
 import MonthYearTrend from "../views/Core/MonthYearTrends/MonthYearTrends"
 import RangeTrends from "../views/Core/RangeTrends/RangeTrends"
-import { Outlet } from "react-router"
+
 
 
 const Container = () => {
