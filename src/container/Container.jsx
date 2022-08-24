@@ -27,7 +27,7 @@ const Container = () => {
                 <Route path='dps' element={< DpsTrends />}></Route>  
             </Routes>
             </ContentDiv>
-            </ContainerDiv>
+        </ContainerDiv>
     )
 }
 
