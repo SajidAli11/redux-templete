@@ -11,7 +11,7 @@ import { Layout } from 'antd';
 
 const Index = () => {
   return ( <>
-  <Layout style={{backgroundColor:"white"}}>
+  <Layout >
     <Navbar />
    </Layout>
   </> );
