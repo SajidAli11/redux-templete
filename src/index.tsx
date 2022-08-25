@@ -1,6 +1,7 @@
-
 import React from 'react'
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client"
+
+
 
 import Navbar from './component/NavBar/Navbar';
 
@@ -16,5 +17,10 @@ const Index = () => {
   </> );
 }
  
-let root=document.getElementById('app')
-ReactDOM.render(<Index />,root)
+
+
+const container = document.getElementById("app");
+
+const root = createRoot(container as HTMLElement);
+
+root.render(<Index />);
