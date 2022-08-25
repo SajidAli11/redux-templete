@@ -13,12 +13,7 @@ const Index = () => {
   );
 };
 
-// let root = document.getElementById("app");
-// ReactDOM.render(<Index />, root);
-
 const container = document.getElementById("app");
 
 const root = ReactDOM.createRoot(container as HTMLElement);
-
-// Initial render
 root.render(<Index />);
