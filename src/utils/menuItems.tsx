@@ -32,7 +32,11 @@ export const menuItems = [
   {
     key: "core",
     icon: <BlockOutlined />,
-    label: "Core",
+    label: (
+      <Link to="/rangetrends">
+        <span>Core</span>
+      </Link>
+    ),
     children: [
       {
         key: "rangetrends",
