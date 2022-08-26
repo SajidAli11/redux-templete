@@ -9,6 +9,7 @@
     "@types/jest": "^28.1.7",
     "@types/node": "^18.7.6",
     "@types/react-dom": "^18.0.6",
+    "@types/styled-components": "^5.1.26",
     "antd": "^4.22.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

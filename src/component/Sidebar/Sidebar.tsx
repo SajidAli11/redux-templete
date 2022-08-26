@@ -1,11 +1,10 @@
-import { Layout, Menu } from "antd";
-import { useState } from "react";
+import { Layout, Menu, Affix } from "antd";
 
 import "antd/dist/antd.min.css";
 import React from "react";
 import { menuItems } from "../../utils/menuItems";
-
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
+import { useState } from "react";
 
 const { Sider } = Layout;
 
@@ -13,23 +12,26 @@ const Sidebar = () => {
   const [collapsed, setCollapsed] = useState(false);
   return (
     <>
-      <Layout
-        style={{
-          minHeight: "100vh",
-        }}
-      >
+      <Affix offsetTop={65}>
         <Sider
+          style={{
+            minHeight: "100vh",
+            zIndex: "1",
+            position: "sticky",
+          }}
           collapsible
           collapsed={collapsed}
-          onCollapse={(value) => setCollapsed(value)}
+          onCollapse={() => {
+            setCollapsed(!collapsed);
+          }}
+          trigger={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
           breakpoint="xl"
           collapsedWidth="60"
           theme="light"
-          trigger={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
         >
           <Menu items={menuItems}></Menu>
         </Sider>
-      </Layout>
+      </Affix>
     </>
   );
 };
