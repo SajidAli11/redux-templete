@@ -2,7 +2,7 @@ import { Layout, Menu, Affix } from "antd";
 
 import "antd/dist/antd.min.css";
 import React from "react";
-import { menuItems } from "../../utils/menuItems";
+import { SideMenuItems } from "../../utils/menuItems";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import { useState } from "react";
 
@@ -29,7 +29,7 @@ const Sidebar = () => {
           collapsedWidth="60"
           theme="light"
         >
-          <Menu items={menuItems}></Menu>
+          <Menu items={SideMenuItems}></Menu>
         </Sider>
       </Affix>
     </>

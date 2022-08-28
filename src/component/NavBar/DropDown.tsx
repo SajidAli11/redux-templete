@@ -1,44 +1,11 @@
 import { Menu } from "antd";
+import { LoginMenuItems, LanguageMenuItems } from "../../utils/menuItems";
 
 const menu = (
-  <Menu
-    selectable
-    defaultSelectedKeys={["3"]}
-    items={[
-      {
-        key: "1",
-        label: "English",
-      },
-      {
-        key: "2",
-        label: "Chinese",
-      },
-      {
-        key: "3",
-        label: "Spanish",
-      },
-      {
-        key: "4",
-        label: "German",
-      },
-    ]}
-  />
+  <Menu selectable defaultSelectedKeys={["3"]} items={LanguageMenuItems} />
 );
 
 const SignUpDropDown = (
-  <Menu
-    selectable
-    defaultSelectedKeys={["3"]}
-    items={[
-      {
-        key: "1",
-        label: "Log In",
-      },
-      {
-        key: "2",
-        label: "Log Out",
-      },
-    ]}
-  />
+  <Menu selectable defaultSelectedKeys={["3"]} items={LoginMenuItems} />
 );
 export { menu, SignUpDropDown };

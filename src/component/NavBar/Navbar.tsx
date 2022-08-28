@@ -17,8 +17,7 @@ import {
   SignUpText,
 } from "./styles";
 import { menu, SignUpDropDown } from "./DropDown";
-import { GlobalStyle } from "./Globalstyles";
-
+import { GlobalStyle } from "./styles";
 const { Header } = Layout;
 
 const Navbar = () => {
@@ -43,20 +42,12 @@ const Navbar = () => {
         >
           <LogoIcon>
             <AppstoreTwoTone />
-          </LogoIcon>{" "}
-          {/* styled component for logo */}
+          </LogoIcon>
           <NavbarSlider>
-            {/* <SearchDiv>
-          {searchstate&&<SearchInput placeholder="Searching . . ." />}
-          <Icon onClick={handleState}><SearchOutlined /></Icon>
-        </SearchDiv> */}
-            {/* styled component for search input type */}
-
             <IconDiv>
               <Icon>
                 <AlertOutlined />
               </Icon>
-
               <Dropdown overlay={SignUpDropDown}>
                 <Typography.Link style={{ color: "white" }}>
                   <Space>

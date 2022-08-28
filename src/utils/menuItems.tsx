@@ -10,7 +10,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-export const menuItems = [
+const SideMenuItems = [
   {
     key: "dashboard",
     icon: <DashboardOutlined />,
@@ -86,3 +86,35 @@ export const menuItems = [
     ),
   },
 ];
+
+const LoginMenuItems = [
+  {
+    key: "1",
+    label: "Log In",
+  },
+  {
+    key: "2",
+    label: "Log Out",
+  },
+];
+
+const LanguageMenuItems = [
+  {
+    key: "1",
+    label: "English",
+  },
+  {
+    key: "2",
+    label: "Chinese",
+  },
+  {
+    key: "3",
+    label: "Spanish",
+  },
+  {
+    key: "4",
+    label: "German",
+  },
+];
+
+export { SideMenuItems, LoginMenuItems, LanguageMenuItems };
