@@ -1,9 +1,8 @@
-import styled from 'styled-components'
-
+import styled from "styled-components";
 
 const TopContainer = styled.div`
   display: flex;
-  background-color: #e7e4e4;
+  background-color: #fff;
   width: inherit;
 `;
 
@@ -15,11 +14,10 @@ const MiddleContainer = styled.div`
 `;
 
 const ViewContainer = styled.div`
-  background-color: #999;
+  background-color: #f4f2f2;
   padding: 32px;
   margin: 12px;
   width: 100%;
-  
 `;
 
-export {TopContainer, MiddleContainer, ViewContainer}
+export { TopContainer, MiddleContainer, ViewContainer };

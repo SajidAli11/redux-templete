@@ -12,7 +12,7 @@ const Sidebar = () => {
   const [collapsed, setCollapsed] = useState(false);
   return (
     <>
-      <Affix offsetTop={65}>
+      <Affix offsetTop={64.0001}>
         <Sider
           style={{
             minHeight: "100vh",

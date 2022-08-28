@@ -29,7 +29,7 @@ const Navbar = () => {
       <Header
         style={{
           position: "fixed",
-          zIndex: 1,
+          zIndex: "3",
           width: "100%",
           lineHeight: "normal",
         }}
