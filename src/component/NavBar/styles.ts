@@ -1,5 +1,10 @@
 import styled from "styled-components"
 
+import {createGlobalStyle} from 'styled-components'
+
+
+
+
 
 const LogoIcon=styled.div`
     font-size: 30px;
@@ -50,4 +55,14 @@ margin-top: 5px;
 
 
 
+
+//For the dropdown menu top-margin to match the bottom of the navbar
+const GlobalStyle=createGlobalStyle`
+.ant-dropdown-menu{
+    margin-top:10px ;  
+}
+ `
+
+
+export {GlobalStyle}
 export {LogoIcon,NavbarSlider,Icon,IconDiv,Language,SignUp,SignUpText,}
