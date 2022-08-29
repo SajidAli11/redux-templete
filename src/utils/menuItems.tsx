@@ -98,23 +98,4 @@ const LoginMenuItems = [
   },
 ];
 
-const LanguageMenuItems = [
-  {
-    key: "1",
-    label: "English",
-  },
-  {
-    key: "2",
-    label: "Chinese",
-  },
-  {
-    key: "3",
-    label: "Spanish",
-  },
-  {
-    key: "4",
-    label: "German",
-  },
-];
-
-export { SideMenuItems, LoginMenuItems, LanguageMenuItems };
+export { SideMenuItems, LoginMenuItems };

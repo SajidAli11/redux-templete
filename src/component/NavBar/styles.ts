@@ -2,9 +2,6 @@ import styled from "styled-components";
 
 import { createGlobalStyle } from "styled-components";
 
-const LogoIcon = styled.div`
-  font-size: 30px;
-`;
 const NavbarSlider = styled.div`
   display: flex;
   width: 100%;
@@ -12,18 +9,17 @@ const NavbarSlider = styled.div`
 `;
 const IconDiv = styled.div`
   display: flex;
-  width: 200px;
+  width: 150px;
   align-items: center;
   justify-content: space-around;
 `;
 const Icon = styled.span`
-  font-size: 25px;
+  font-size: 18px;
   color: white;
 `;
 const Language = styled.div`
   color: white;
   font-size: 14px;
-
   display: flex;
   align-items: center;
   width: fit-content;
@@ -41,13 +37,23 @@ const SignUpText = styled.span`
   margin-left: 5px;
 `;
 
+const LogoText = styled.span`
+  width: 150px;
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+`;
+
 //For the dropdown menu top-margin to match the bottom of the navbar
 const GlobalStyle = createGlobalStyle`
 .ant-dropdown-menu{
-    margin-top:12px ;  
+    margin-top:16px ;  
 }
-
+.ant-layout-header{
+  padding: 0 25px;
+}
  `;
 
 export { GlobalStyle };
-export { LogoIcon, NavbarSlider, Icon, IconDiv, Language, SignUp, SignUpText };
+export { NavbarSlider, Icon, IconDiv, Language, SignUp, SignUpText, LogoText };

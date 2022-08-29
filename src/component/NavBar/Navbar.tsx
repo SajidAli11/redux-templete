@@ -1,9 +1,9 @@
 import React from "react";
 import "antd/dist/antd.min.css";
-import { LoginOutlined, AppstoreTwoTone } from "@ant-design/icons";
+import { LoginOutlined } from "@ant-design/icons";
 import { Layout, Menu, Dropdown, Space, Typography } from "antd";
 import {
-  LogoIcon,
+  LogoText,
   NavbarSlider,
   Icon,
   IconDiv,
@@ -11,8 +11,8 @@ import {
   SignUp,
   SignUpText,
 } from "./styles";
-import { SignUpDropDown } from "./DropDown";
 import { GlobalStyle } from "./styles";
+import { LoginMenuItems } from "../../utils/menuItems";
 const { Header } = Layout;
 
 const Navbar = () => {
@@ -34,12 +34,24 @@ const Navbar = () => {
           defaultSelectedKeys={["2"]}
           style={{ height: "100%", alignItems: "center" }}
         >
-          <LogoIcon>
-            <AppstoreTwoTone />
-          </LogoIcon>
+          <LogoText>
+            <span>DIRBS-VIEW</span>
+          </LogoText>
           <NavbarSlider>
             <IconDiv>
-              <Dropdown overlay={SignUpDropDown}>
+              <Language>
+                <span>EN</span>
+              </Language>
+
+              <Dropdown
+                overlay={
+                  <Menu
+                    selectable
+                    defaultSelectedKeys={["3"]}
+                    items={LoginMenuItems}
+                  />
+                }
+              >
                 <Typography.Link style={{ color: "white" }}>
                   <Space>
                     <SignUp>
@@ -52,10 +64,6 @@ const Navbar = () => {
                   </Space>
                 </Typography.Link>
               </Dropdown>
-
-              <Language>
-                <span>EN</span>
-              </Language>
             </IconDiv>
           </NavbarSlider>
         </Menu>
