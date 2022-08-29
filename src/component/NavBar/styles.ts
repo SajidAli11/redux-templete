@@ -7,27 +7,23 @@ const LogoIcon = styled.div`
 `;
 const NavbarSlider = styled.div`
   display: flex;
-  color: red;
-  margin-left: 60%;
-  width: 700px;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: flex-end;
 `;
 const IconDiv = styled.div`
   display: flex;
-  width: 300px;
+  width: 200px;
   align-items: center;
   justify-content: space-around;
 `;
 const Icon = styled.span`
   font-size: 25px;
   color: white;
-  font-weight: bold;
 `;
 const Language = styled.div`
   color: white;
-  font-size: 18px;
-  margin-top: 10px;
-  font-weight: 600;
+  font-size: 14px;
+
   display: flex;
   align-items: center;
   width: fit-content;
@@ -38,26 +34,18 @@ const SignUp = styled.div`
   align-items: center;
   width: fit-content;
   justify-content: space-between;
-  margin-top: 6px;
 `;
 const SignUpText = styled.span`
   color: white;
-  font-weight: bold;
+  font-size: 14px;
   margin-left: 5px;
-  margin-top: 5px;
 `;
 
 //For the dropdown menu top-margin to match the bottom of the navbar
 const GlobalStyle = createGlobalStyle`
 .ant-dropdown-menu{
-    margin-top:10px ;  
+    margin-top:12px ;  
 }
-/* .ant-layout-header{
-    background   :#D2FCFF;
-    .ant-menu{
-    background: #D2FCFF;
-}
-} */
 
  `;
 

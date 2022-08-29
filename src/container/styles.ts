@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+const Navbarheight = "64px";
+
 const TopContainer = styled.div`
   display: flex;
   background-color: #fff;
@@ -8,16 +10,16 @@ const TopContainer = styled.div`
 `;
 
 const MiddleContainer = styled.div`
-  margin-top: 64px;
+  margin-top: ${Navbarheight};
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: inherit-${Navbarheight};
 `;
 
 const ViewContainer = styled.div`
   background-color: #f4f2f2;
   padding: 32px;
-  margin: 12px;
   width: 100%;
 `;
 

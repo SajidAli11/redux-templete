@@ -1,11 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "antd/dist/antd.min.css";
-import {
-  AlertOutlined,
-  DownOutlined,
-  LoginOutlined,
-  AppstoreTwoTone,
-} from "@ant-design/icons";
+import { LoginOutlined, AppstoreTwoTone } from "@ant-design/icons";
 import { Layout, Menu, Dropdown, Space, Typography } from "antd";
 import {
   LogoIcon,
@@ -16,12 +11,11 @@ import {
   SignUp,
   SignUpText,
 } from "./styles";
-import { menu, SignUpDropDown } from "./DropDown";
+import { SignUpDropDown } from "./DropDown";
 import { GlobalStyle } from "./styles";
 const { Header } = Layout;
 
 const Navbar = () => {
-  const [size, setSize] = useState(2);
   return (
     <>
       <GlobalStyle />
@@ -45,9 +39,6 @@ const Navbar = () => {
           </LogoIcon>
           <NavbarSlider>
             <IconDiv>
-              <Icon>
-                <AlertOutlined />
-              </Icon>
               <Dropdown overlay={SignUpDropDown}>
                 <Typography.Link style={{ color: "white" }}>
                   <Space>
@@ -63,14 +54,7 @@ const Navbar = () => {
               </Dropdown>
 
               <Language>
-                <Dropdown overlay={menu}>
-                  <Typography.Link style={{ color: "white" }}>
-                    <Space size={size}>
-                      Ln {/*  Languages */}
-                      <DownOutlined />
-                    </Space>
-                  </Typography.Link>
-                </Dropdown>
+                <span>EN</span>
               </Language>
             </IconDiv>
           </NavbarSlider>
