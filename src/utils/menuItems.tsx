@@ -32,11 +32,7 @@ const SideMenuItems = [
   {
     key: "core",
     icon: <BlockOutlined />,
-    label: (
-      <Link to="/rangetrends">
-        <span>Core</span>
-      </Link>
-    ),
+    label: "Core",
     children: [
       {
         key: "rangetrends",

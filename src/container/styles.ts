@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Navbarheight = "64px";
+const Navbarheight = "48px";
 
 const TopContainer = styled.div`
   display: flex;

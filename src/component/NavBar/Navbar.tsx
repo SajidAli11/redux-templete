@@ -2,14 +2,17 @@ import React from "react";
 import "antd/dist/antd.min.css";
 import { LoginOutlined } from "@ant-design/icons";
 import { Layout, Menu, Dropdown, Space, Typography } from "antd";
+import { Link } from "react-router-dom";
 import {
   LogoText,
-  NavbarSlider,
-  Icon,
-  IconDiv,
-  Language,
+  RightMenuDiv,
+  RightSubMenuIcon,
+  RightMenu,
+  LanguageLabel,
   SignUp,
-  SignUpText,
+  LabelText,
+  Logo,
+  LogoDiv,
 } from "./styles";
 import { GlobalStyle } from "./styles";
 import { LoginMenuItems } from "../../utils/menuItems";
@@ -19,7 +22,6 @@ const Navbar = () => {
   return (
     <>
       <GlobalStyle />
-
       <Header
         style={{
           position: "fixed",
@@ -34,14 +36,16 @@ const Navbar = () => {
           defaultSelectedKeys={["2"]}
           style={{ height: "100%", alignItems: "center" }}
         >
-          <LogoText>
-            <span>DIRBS-VIEW</span>
-          </LogoText>
-          <NavbarSlider>
-            <IconDiv>
-              <Language>
-                <span>EN</span>
-              </Language>
+          <LogoDiv to={"/dashboard"}>
+            <Logo src={require("../../assets/dirbs-logo.png")} />{" "}
+            <LogoText>DIRBS-VIEW</LogoText>
+          </LogoDiv>
+
+          <RightMenuDiv>
+            <RightMenu>
+              <LanguageLabel>
+                <LabelText>EN</LabelText>
+              </LanguageLabel>
 
               <Dropdown
                 overlay={
@@ -52,20 +56,20 @@ const Navbar = () => {
                   />
                 }
               >
-                <Typography.Link style={{ color: "white" }}>
+                <Typography.Link>
                   <Space>
                     <SignUp>
-                      <Icon>
+                      <RightSubMenuIcon>
                         <LoginOutlined />
-                      </Icon>
-                      <SignUpText>SIGN UP</SignUpText>
+                      </RightSubMenuIcon>
+                      <LabelText>SIGN UP</LabelText>
                     </SignUp>
                     {/*  signup */}
                   </Space>
                 </Typography.Link>
               </Dropdown>
-            </IconDiv>
-          </NavbarSlider>
+            </RightMenu>
+          </RightMenuDiv>
         </Menu>
       </Header>
     </>
