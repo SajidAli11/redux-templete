@@ -26,7 +26,7 @@ const Icon = styled.span`
 const Language = styled.div`
   color: white;
   font-size: 18px;
-  margin-top: 13px;
+  margin-top: 10px;
   font-weight: 600;
   display: flex;
   align-items: center;

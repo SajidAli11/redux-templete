@@ -4,6 +4,7 @@ const TopContainer = styled.div`
   display: flex;
   background-color: #fff;
   width: inherit;
+  height: fit-content;
 `;
 
 const MiddleContainer = styled.div`
