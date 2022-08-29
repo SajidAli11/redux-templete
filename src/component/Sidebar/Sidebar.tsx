@@ -1,4 +1,5 @@
-import { Layout, Menu, Affix } from "antd";
+import { Menu, Affix } from "antd";
+import Sider from "antd/lib/layout/Sider";
 
 import "antd/dist/antd.min.css";
 import React from "react";
@@ -6,15 +7,13 @@ import { SideMenuItems } from "../../utils/menuItems";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import { useState } from "react";
 
-const { Sider } = Layout;
-
 const Sidebar = () => {
   const [collapsed, setCollapsed] = useState(false);
   return (
     <Affix offsetTop={48.01}>
       <Sider
         style={{
-          minHeight: "100vh",
+          height: "93vh",
           zIndex: "1",
           position: "sticky",
         }}
