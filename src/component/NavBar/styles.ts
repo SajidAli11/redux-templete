@@ -53,25 +53,22 @@ const LabelText = styled.span`
   margin-left: 5px;
 `;
 
-//For the dropdown menu top-margin to match the bottom of the navbar
-const GlobalStyle = createGlobalStyle`
-.ant-dropdown-menu{
-    margin-top:8px ;  
-}
-.ant-layout-header{
-  padding: 0 10px;
-  height: 48px;
-  width: 100%;
-  position: fixed;
-  z-index: 3;
-
-}
-.ant-row{
-  margin-top: 4px;
-}
-
-
- `;
+const NavDiv = styled.div`
+  & .ant-dropdown-menu {
+    margin-top: 8px;
+  }
+  & .ant-layout-header {
+    padding: 0 10px;
+    height: 48px;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    line-height: normal;
+  }
+  & .ant-row {
+    margin-top: 4px;
+  }
+`;
 
 export {
   RightMenuDiv,
@@ -83,5 +80,5 @@ export {
   LogoText,
   Logo,
   LogoDiv,
-  GlobalStyle,
+  NavDiv,
 };

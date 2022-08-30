@@ -12,7 +12,7 @@ import {
   LabelText,
   Logo,
   LogoDiv,
-  GlobalStyle,
+  NavDiv,
 } from "./styles";
 
 import { LoginMenuItems } from "../../utils/menuItems";
@@ -21,48 +21,48 @@ const { Header } = Layout;
 const Navbar = () => {
   return (
     <>
-      <GlobalStyle />
+      <NavDiv>
+        <Header>
+          <Row align="middle" justify="space-between">
+            <Col>
+              <LogoDiv to={"/dashboard"}>
+                <Logo src={require("../../assets/dirbs-logo.png")} />
+                <LogoText>DIRBS-VIEW</LogoText>
+              </LogoDiv>
+            </Col>
+            <Col>
+              <RightMenuDiv>
+                <RightMenu>
+                  <LanguageLabel>
+                    <LabelText>EN</LabelText>
+                  </LanguageLabel>
 
-      <Header>
-        <Row align="middle" justify="space-between">
-          <Col>
-            <LogoDiv to={"/dashboard"}>
-              <Logo src={require("../../assets/dirbs-logo.png")} />
-              <LogoText>DIRBS-VIEW</LogoText>
-            </LogoDiv>
-          </Col>
-          <Col>
-            <RightMenuDiv>
-              <RightMenu>
-                <LanguageLabel>
-                  <LabelText>EN</LabelText>
-                </LanguageLabel>
-
-                <Dropdown
-                  overlay={
-                    <Menu
-                      selectable
-                      defaultSelectedKeys={["3"]}
-                      items={LoginMenuItems}
-                    />
-                  }
-                >
-                  <Typography.Link>
-                    <Space>
-                      <SignUp>
-                        <RightSubMenuIcon>
-                          <LoginOutlined />
-                        </RightSubMenuIcon>
-                        <LabelText>SIGN UP</LabelText>
-                      </SignUp>
-                    </Space>
-                  </Typography.Link>
-                </Dropdown>
-              </RightMenu>
-            </RightMenuDiv>
-          </Col>
-        </Row>
-      </Header>
+                  <Dropdown
+                    overlay={
+                      <Menu
+                        selectable
+                        defaultSelectedKeys={["3"]}
+                        items={LoginMenuItems}
+                      />
+                    }
+                  >
+                    <Typography.Link>
+                      <Space>
+                        <SignUp>
+                          <RightSubMenuIcon>
+                            <LoginOutlined />
+                          </RightSubMenuIcon>
+                          <LabelText>SIGN UP</LabelText>
+                        </SignUp>
+                      </Space>
+                    </Typography.Link>
+                  </Dropdown>
+                </RightMenu>
+              </RightMenuDiv>
+            </Col>
+          </Row>
+        </Header>
+      </NavDiv>
     </>
   );
 };
