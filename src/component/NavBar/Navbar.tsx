@@ -45,6 +45,7 @@ const Navbar = () => {
                         items={LoginMenuItems}
                       />
                     }
+                    overlayStyle={{ marginTop: "28px" }}
                   >
                     <Typography.Link>
                       <Space>

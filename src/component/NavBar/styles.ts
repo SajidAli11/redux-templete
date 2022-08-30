@@ -54,9 +54,6 @@ const LabelText = styled.span`
 `;
 
 const NavDiv = styled.div`
-  & .ant-dropdown-menu {
-    margin-top: 8px;
-  }
   & .ant-layout-header {
     padding: 0 10px;
     height: 48px;

@@ -5,6 +5,7 @@ import React from "react";
 import { SideMenuItems } from "../../utils/menuItems";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import { useState } from "react";
+import { SideDiv } from "./styles";
 const { Sider } = Layout;
 
 const Sidebar = () => {
