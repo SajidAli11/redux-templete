@@ -22,13 +22,8 @@ const Navbar = () => {
   return (
     <>
       <GlobalStyle />
-      <Header
-        style={{
-          position: "fixed",
-          zIndex: "3",
-          width: "100%",
-        }}
-      >
+
+      <Header>
         <Row align="middle" justify="space-between">
           <Col>
             <LogoDiv to={"/dashboard"}>

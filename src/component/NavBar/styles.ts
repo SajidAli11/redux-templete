@@ -1,7 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { Link } from "react-router-dom";
-import { Row } from "antd";
-import Navbar from "./Navbar";
+import { Header } from "antd/lib/layout/layout";
 const LogoDiv = styled(Link)`
   display: flex;
   align-items: center;
@@ -62,6 +61,10 @@ const GlobalStyle = createGlobalStyle`
 .ant-layout-header{
   padding: 0 10px;
   height: 48px;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+
 }
 .ant-row{
   margin-top: 4px;
