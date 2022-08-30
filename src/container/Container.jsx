@@ -9,7 +9,7 @@ import DpsTrends from "../views/DPS/Dps";
 import MonthYearTrend from "../views/Core/MonthYearTrends/MonthYearTrends";
 import RangeTrends from "../views/Core/RangeTrends/RangeTrends";
 import Navbar from "../component/NavBar/Navbar";
-
+import React from "react";
 const Container = () => {
   return (
     <>

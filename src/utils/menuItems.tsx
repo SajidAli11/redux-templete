@@ -86,10 +86,6 @@ const SideMenuItems = [
 const LoginMenuItems = [
   {
     key: "1",
-    label: "Log In",
-  },
-  {
-    key: "2",
     label: "Log Out",
   },
 ];

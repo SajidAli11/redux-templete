@@ -1,11 +1,11 @@
-import { Menu, Affix } from "antd";
-import Sider from "antd/lib/layout/Sider";
+import { Menu, Affix, Layout } from "antd";
 
 import "antd/dist/antd.min.css";
 import React from "react";
 import { SideMenuItems } from "../../utils/menuItems";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import { useState } from "react";
+const { Sider } = Layout;
 
 const Sidebar = () => {
   const [collapsed, setCollapsed] = useState(false);
