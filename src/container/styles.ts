@@ -19,7 +19,6 @@ const MiddleContainer = styled.div`
 
 const ViewContainer = styled.div`
   background-color: #f4f2f2;
-  padding: 32px;
   width: 100%;
 `;
 

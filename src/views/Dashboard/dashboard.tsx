@@ -1,16 +1,19 @@
 import React from "react";
-import { Row } from "antd";
+import AntdCard from "../../component/Card/Card";
+import { Header } from "antd/lib/layout/layout";
+import { Breadcrumb } from "antd";
+import BreadcrumbItem from "antd/lib/breadcrumb/BreadcrumbItem";
+import { BreadCrumbDiv } from "./styles";
 const DashBoard = () => {
   return (
     <>
-      <h1> This is dashboard</h1>
-      <h1> This is dashboard</h1>
-      <h1> This is dashboard</h1>
-      <h1> This is dashboard</h1>
-      <h1> This is dashboard</h1>
-      <h1> This is dashboard</h1>
-      <h1> This is dashboard</h1>
-      <h1> This is dashboard</h1>
+      <BreadCrumbDiv>
+        <Breadcrumb>
+          <BreadcrumbItem>Dashboard</BreadcrumbItem>
+        </Breadcrumb>
+      </BreadCrumbDiv>
+
+      <AntdCard Title="Dashboard" />
     </>
   );
 };

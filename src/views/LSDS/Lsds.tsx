@@ -1,6 +1,11 @@
 import React from "react";
+import AntdCard from "../../component/Card/Card";
 const LsdsTrends = () => {
-  return <div>This is LSDS</div>;
+  return (
+    <>
+      <AntdCard Title="Lost and Stolen Devices Subsystem" />
+    </>
+  );
 };
 
 export default LsdsTrends;

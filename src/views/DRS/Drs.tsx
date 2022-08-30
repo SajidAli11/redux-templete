@@ -1,6 +1,11 @@
 import React from "react";
+import AntdCard from "../../component/Card/Card";
 const DrsTrends = () => {
-  return <div>This is DRS</div>;
+  return (
+    <>
+      <AntdCard Title="Device Registration Sub-System" />
+    </>
+  );
 };
 
 export default DrsTrends;

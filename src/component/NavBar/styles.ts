@@ -54,6 +54,7 @@ const LabelText = styled.span`
 `;
 
 const NavDiv = styled.div`
+  width: inherit;
   & .ant-layout-header {
     padding: 0 10px;
     height: 48px;
@@ -67,6 +68,13 @@ const NavDiv = styled.div`
   }
 `;
 
+const GlobalStyle = createGlobalStyle`
+.ant-dropdown-menu{
+    margin-top:10px ;
+    
+}
+ `;
+
 export {
   RightMenuDiv,
   RightSubMenuIcon,
@@ -78,4 +86,5 @@ export {
   Logo,
   LogoDiv,
   NavDiv,
+  GlobalStyle,
 };

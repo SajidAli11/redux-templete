@@ -13,6 +13,7 @@ import {
   Logo,
   LogoDiv,
   NavDiv,
+  GlobalStyle,
 } from "./styles";
 
 import { LoginMenuItems } from "../../utils/menuItems";
@@ -21,6 +22,7 @@ const { Header } = Layout;
 const Navbar = () => {
   return (
     <>
+      <GlobalStyle />
       <NavDiv>
         <Header>
           <Row align="middle" justify="space-between">
@@ -45,7 +47,6 @@ const Navbar = () => {
                         items={LoginMenuItems}
                       />
                     }
-                    overlayStyle={{ marginTop: "28px" }}
                   >
                     <Typography.Link>
                       <Space>

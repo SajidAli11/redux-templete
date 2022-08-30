@@ -1,6 +1,11 @@
 import React from "react";
+import AntdCard from "../../component/Card/Card";
 const DpsTrends = () => {
-  return <div>This is DPS</div>;
+  return (
+    <>
+      <AntdCard Title="Device Pairing Sub-System" />
+    </>
+  );
 };
 
 export default DpsTrends;
