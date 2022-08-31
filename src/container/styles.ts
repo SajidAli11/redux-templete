@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Navbarheight = "48px";
 
+//Entire Content Container
 const TopContainer = styled.div`
   display: flex;
   background-color: #fff;
@@ -9,6 +10,7 @@ const TopContainer = styled.div`
   height: fit-content;
 `;
 
+//Container which has the Sidebar and the View Section of the subsystems
 const MiddleContainer = styled.div`
   margin-top: ${Navbarheight};
   display: flex;
@@ -17,6 +19,7 @@ const MiddleContainer = styled.div`
   height: inherit-${Navbarheight};
 `;
 
+//Container with only the view section of the subsystems
 const ViewContainer = styled.div`
   background-color: #f4f2f2;
   width: 100%;

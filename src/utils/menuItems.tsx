@@ -10,6 +10,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
+//Menu Items for the Main Sider in the application
 const SideMenuItems = [
   {
     key: "dashboard",
@@ -83,6 +84,7 @@ const SideMenuItems = [
   },
 ];
 
+//Dropdown Items for the Login Menu
 const LoginMenuItems = [
   {
     key: "1",

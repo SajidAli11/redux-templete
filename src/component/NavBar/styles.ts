@@ -1,5 +1,23 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { Link } from "react-router-dom";
+
+//Navnbar wrapper targettign some antd component classes.
+const NavDiv = styled.div`
+  width: inherit;
+  & .ant-layout-header {
+    padding: 0 10px;
+    height: 48px;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    line-height: normal;
+  }
+  & .ant-row {
+    margin-top: 4px;
+  }
+`;
+
+//Left Side Div for the Logo and the title
 const LogoDiv = styled(Link)`
   display: flex;
   align-items: center;
@@ -15,6 +33,8 @@ const LogoText = styled.span`
   color: white;
   font-weight: bold;
 `;
+
+//Ride Side Div for the Sign-in and the Language Label
 const RightMenuDiv = styled.div`
   display: flex;
   width: 100%;
@@ -52,21 +72,7 @@ const LabelText = styled.span`
   margin-left: 5px;
 `;
 
-const NavDiv = styled.div`
-  width: inherit;
-  & .ant-layout-header {
-    padding: 0 10px;
-    height: 48px;
-    width: 100%;
-    position: fixed;
-    z-index: 3;
-    line-height: normal;
-  }
-  & .ant-row {
-    margin-top: 4px;
-  }
-`;
-
+//Global styling targetting the Sign-up dropdown
 const GlobalStyle = createGlobalStyle`
 .ant-dropdown-menu{
     margin-top:8px ; 
