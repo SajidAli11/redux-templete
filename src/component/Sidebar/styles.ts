@@ -12,7 +12,8 @@ const GlobalSiderStyle = createGlobalStyle`
     align-items: center;
     margin-right: 12px;
     margin-top: 17px;
-    text-align: center,
+    text-align: center;
+    transition: all 2s;
 }
 `;
 

@@ -1,6 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { Link } from "react-router-dom";
-import { Header } from "antd/lib/layout/layout";
 const LogoDiv = styled(Link)`
   display: flex;
   align-items: center;
@@ -70,7 +69,7 @@ const NavDiv = styled.div`
 
 const GlobalStyle = createGlobalStyle`
 .ant-dropdown-menu{
-    margin-top:10px ; 
+    margin-top:8px ; 
 }
  `;
 
