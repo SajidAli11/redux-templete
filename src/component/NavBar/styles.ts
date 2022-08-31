@@ -70,8 +70,7 @@ const NavDiv = styled.div`
 
 const GlobalStyle = createGlobalStyle`
 .ant-dropdown-menu{
-    margin-top:10px ;
-    
+    margin-top:10px ; 
 }
  `;
 
