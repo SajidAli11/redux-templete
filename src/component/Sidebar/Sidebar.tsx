@@ -25,16 +25,7 @@ const Sidebar = () => {
             collapsed ? (
               <MenuUnfoldOutlined />
             ) : (
-              <MenuFoldOutlined
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-end",
-                  alignItems: "center",
-                  marginRight: "12px",
-                  marginTop: "17px",
-                  textAlign: "center",
-                }}
-              />
+              <MenuFoldOutlined className="MenuOutlineIcon" />
             )
           }
           breakpoint="xl"
