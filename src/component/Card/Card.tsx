@@ -12,7 +12,7 @@ const AntdCard = ({ Title }: CardProps) => {
         title={Title}
         extra={<a href="#">More</a>}
         style={{
-          width: 400,
+          width: "100%",
         }}
       >
         <p> content</p>
