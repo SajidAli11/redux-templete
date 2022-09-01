@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 //Global Style targetting custom antd Sider Class and Icon class for visual purposes.
 const GlobalSiderStyle = createGlobalStyle`
 .MainSider{
-    height: 93vh;
+    //height: 93vh;
     z-index: 1;
     position:sticky;
 }

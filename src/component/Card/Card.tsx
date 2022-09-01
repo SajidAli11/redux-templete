@@ -7,7 +7,7 @@ type CardProps = {
 
 const AntdCard = ({ Title }: CardProps) => {
   return (
-    <div style={{ padding: "32px", overflow: "hidden" }}>
+    <div style={{ padding: "18px", overflow: "hidden" }}>
       <Card
         title={Title}
         extra={<a href="#">More</a>}

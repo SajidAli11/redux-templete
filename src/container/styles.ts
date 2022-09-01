@@ -23,6 +23,7 @@ const MiddleContainer = styled.div`
 const ViewContainer = styled.div`
   background-color: #f4f2f2;
   width: 100%;
+  height: fit-content;
 `;
 
 export { TopContainer, MiddleContainer, ViewContainer };
