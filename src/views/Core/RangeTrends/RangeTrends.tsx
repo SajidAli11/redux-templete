@@ -9,6 +9,7 @@ const RangeTrends = () => {
     <>
       <BreadCrumbDiv>
         <Breadcrumb>
+          <BreadcrumbItem>Dashboard</BreadcrumbItem>
           <BreadcrumbItem>Core</BreadcrumbItem>
           <BreadcrumbItem>Range Trends</BreadcrumbItem>
         </Breadcrumb>

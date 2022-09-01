@@ -8,6 +8,7 @@ const MonthYearTrend = () => {
     <>
       <BreadCrumbDiv>
         <Breadcrumb>
+          <BreadcrumbItem>Dashboard</BreadcrumbItem>
           <BreadcrumbItem>Core</BreadcrumbItem>
           <BreadcrumbItem>Month Year Trends</BreadcrumbItem>
         </Breadcrumb>
